@@ -22,14 +22,14 @@ This project is built using the [.NET Framework](http://sinatrarb.com/) 4.6.1, a
    $ cd send-sms-during-inbound-calls-csharp
    ```
 
-1. Open the TwilioApp/Web.config file and edit the `TwilioAccountSid` and `TwilioAutToken` with your own data:
+1. Open the TwilioApp/Web.config file and edit the `TwilioAccountSid` and `TwilioAuthToken` with your own data:
 
-  ```
-  <appSettings>
-    <add key="TwilioAccountSid" value="ACxxx" />
-    <add key="TwilioAuthToken" value="xxx" />
-  </appSettings>
-  ```
+    ```
+    <appSettings>
+      <add key="TwilioAccountSid" value="ACxxx" />
+      <add key="TwilioAuthToken" value="xxx" />
+    </appSettings>
+    ```
 
 1. Build the project in Visual Studio and run the application.
 
@@ -38,6 +38,8 @@ This project is built using the [.NET Framework](http://sinatrarb.com/) 4.6.1, a
     ```bash
     $ ngrok http 49341 -host-header="localhost:49341"
     ```
+
+    Or, use [ngrok Extensions](https://marketplace.visualstudio.com/items?itemName=DavidProthero.NgrokExtensions) for Visual Studio. Select "Tools... Start ngrok Tunnel".
 
 1. Configure Twilio to call your webhooks
 
