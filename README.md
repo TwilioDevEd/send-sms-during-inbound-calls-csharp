@@ -4,6 +4,8 @@
 
 # Send an SMS during a phone call. Powered by Twilio and C#/.NET Framework
 
+![](https://github.com/TwilioDevEd/send-sms-during-inbound-calls-csharp/workflows/NetFx/badge.svg)
+
 > We are currently in the process of updating this sample template. If you are encountering any issues with the sample, please open an issue at [github.com/twilio-labs/code-exchange/issues](https://github.com/twilio-labs/code-exchange/issues) and we'll try to help you.
 
 Learn how to send an SMS to someone who's called your Twilio phone number while they're on the call.
@@ -15,7 +17,7 @@ This small sample application will say a short message to an inbound caller and,
 
 ## Local Development
 
-This project is built using the [.NET Framework](http://sinatrarb.com/) 4.6.1, and the [Twilio .NET Framework Helper Library](https://www.twilio.com/docs/libraries/csharp-dotnet).
+This project is built using the [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework/net472) 4.7, and the [Twilio .NET Framework Helper Library](https://www.twilio.com/docs/libraries/csharp-dotnet).
 
 1. First clone this repository and `cd` into it.
 
@@ -24,14 +26,9 @@ This project is built using the [.NET Framework](http://sinatrarb.com/) 4.6.1, a
    $ cd send-sms-during-inbound-calls-csharp
    ```
 
-1. Open the TwilioApp/Web.config file and edit the `TwilioAccountSid` and `TwilioAuthToken` with your own data:
+1. Copy the file `TwilioApp/Local.config.example` to `TwilioApp/Local.config`.
 
-    ```
-    <appSettings>
-      <add key="TwilioAccountSid" value="ACxxx" />
-      <add key="TwilioAuthToken" value="xxx" />
-    </appSettings>
-    ```
+1. Open the TwilioApp/Local.config file and edit the `TwilioAccountSid` and `TwilioAuthToken` with your own data. You can get your Account SID and auth token from your [dashboard](https://www.twilio.com/console).
 
 1. Build the project in Visual Studio and run the application.
 
@@ -57,5 +54,6 @@ This project is built using the [.NET Framework](http://sinatrarb.com/) 4.6.1, a
 ## Meta
 
 * No warranty expressed or implied. Software is as is. Diggity.
+* The CodeExchange repository can be found [here](https://github.com/twilio-labs/code-exchange/).
 * [MIT License](http://www.opensource.org/licenses/mit-license.html)
 * Lovingly crafted by Twilio Developer Education.
